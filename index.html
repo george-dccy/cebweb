@@ -341,7 +341,7 @@
             const item = coreLayer.content.find(i => i.title === itemTitle);
             if (!item) return;
 
-            const contentHtml = `<p class='font-semibold text-lg mb-2'>经营哲学:</p><p class='mb-4'>${item.philosophy}</p><div class='text-sm p-3 bg-slate-900 rounded-md border-l-4' style='border-color:${data.ioc.color}'>${item.ioc}</div>`;
+            const contentHtml = `<p class='font-semibold text-lg mb-2'>经营理念:</p><p class='mb-4'>${item.philosophy}</p><div class='text-sm p-3 bg-slate-900 rounded-md border-l-4' style='border-color:${data.ioc.color}'>${item.ioc}</div>`;
             createModal(item.title, contentHtml);
         }
 
