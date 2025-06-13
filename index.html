@@ -162,6 +162,12 @@
     <header class="text-center mb-8">
         <h1 class="text-3xl md:text-4xl font-bold text-white">光大银行智能供应链金融生态系统蓝图</h1>
         <p class="text-lg text-slate-400 mt-2">愿景：成为产业生态的“风险与资本”智能调度平台</p>
+        <!-- Link to the new static page -->
+        <div class="mt-4">
+            <a href="all_content_blueprint.html" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors underline text-sm">
+                [ 显示全部内容 ]
+            </a>
+        </div>
     </header>
 
     <nav class="flex justify-center space-x-2 md:space-x-4 mb-8">
@@ -261,6 +267,7 @@
             document.getElementById('modal-container').innerHTML = '';
         }
 
+        // --- FIXED: ADDED MISSING FUNCTIONS ---
         function renderMacro(layer) {
             return `
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -292,7 +299,8 @@
                 </div>
             `;
         }
-        
+        // --- END OF FIX ---
+
         function renderCycle(layer) {
             const cycleHtml = `
                 <div class="cycle-container">
